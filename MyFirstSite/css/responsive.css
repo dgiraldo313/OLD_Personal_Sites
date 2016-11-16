@@ -1,0 +1,182 @@
+@media screen and (min-width: 480px){
+  
+  
+  /***********************
+  Section: CONTACT
+  ************************/
+  
+  #primary{
+    width:50%;
+    float: left;
+    margin: 10% 5% 10% 5%;
+
+  }
+  
+  #secondary {
+    width:40%;
+    float: right;
+    margin-bottom: 40px;
+  }
+
+
+  .container{
+    margin: 100px auto;
+
+  }
+  .container-double{
+    margin: 15% auto;
+    
+  }
+  .container-content{
+    text-align: left;
+    margin: auto; 
+    max-width: 90%;
+  }
+ 
+  /***********************
+  Section: Banner
+  ************************/
+  
+  .banner{
+    margin-top:50px;
+  }
+  
+  /***********************
+  3*5= 15
+  100%-15%= 85%
+  85/3= 28.333333333333
+  
+  this is how you get the percentage needed for three columns
+  ************************/
+  
+  
+  /***********************
+  PAGE:PORTFOLIO
+  ************************/
+  
+  #gallery li{
+    width:28.3333%
+  }
+  
+  #gallery li:nth-child(4n){
+    clear:left;
+  }
+  
+  
+  /***********************
+  PAGE:ABOUT
+  ************************/
+  
+  .profile-photo{
+    margin: auto;
+    max-width: 200px;
+  }
+  
+}
+/***********************
+Section: ad
+************************/
+
+
+
+
+@media screen and (min-width: 660px){
+  
+  /***********************
+  HEADER
+  ************************/
+ 
+  nav{ 
+    background: none;
+    float:right;
+    /*margin-right:5%;*/
+    text-align:right;
+    /*width: 45%;*/
+    height:0;
+  }
+
+  nav ul, nav:active ul{
+    list-style:none;
+    margin:0 10px;
+    padding: 0;
+    display: inline-block;
+    position: inherit;
+    padding: 20px;
+    background: none;
+    border: none;
+    /*right: 20px;*/
+    /*top: 60px;*/
+    width: 100%;
+    border-radius: none;
+  }
+  nav li{
+    display: inline-block;
+    width: auto;
+    border-bottom: none;
+
+  }
+
+  /*nav li:last-child{
+    display: none;
+  }*/
+
+  
+
+  
+
+
+  #menu-icon{
+    display: none;
+    /*position: absolute;*/
+    /*right: -900px;*/
+    padding: 0;
+  }
+
+  nav>button{
+    display: none;
+  }
+
+
+  
+  #logo{
+    float:left;
+    margin-left: 2.5%;
+    text-align:left;
+    width: 45%;
+    
+  }
+  
+  h1{
+    font-size:2.5em;
+  }
+  
+  h2{
+    font-size:0.825em;
+    margin-bottom: 20px;
+    margin-left:15px;
+  }
+  
+  header{
+    /*border-bottom: 10px solid #76BEBA;*/
+    
+  }
+  /***********************
+  Section: Banner
+  ************************/
+  
+  
+  #description-holder{
+    font-size:2em;
+  }
+
+  .container{
+    margin: 70px auto;
+
+  }
+  .container-content{
+    max-width: 80%;
+  }
+  
+}
+
+

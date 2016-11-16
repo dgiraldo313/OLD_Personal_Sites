@@ -1,0 +1,130 @@
+/*//*custom css for daily cloud rss feed*/
+
+#container{
+	text-align: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    border: 0px solid #CCCCCC;
+}
+#header{
+    display: block;
+    float: left;
+	margin: 0px;
+    color: #FFFFFF;
+    background-color: #ed1e24;
+    background-image: none;
+    height: 31px;
+    width: auto;
+    overflow: hidden;
+}
+
+#header .feed_title{
+	margin: 0;
+    padding: 7px 14px 7px 15px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    display: inline-block;
+    position: static;
+}
+
+#header .feed_title:hover{
+    text-decoration: none;
+
+}
+#header .feed_title a:link{
+	color: #FFFFFF;
+    text-decoration: none;
+	}
+#header .feed_title a:visited{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#header .feed_title a:hover{
+	color:#FFFFFF;
+	text-decoration:underline;
+}
+#header .feed_title a:active{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#content{
+    overflow: hidden;
+    margin: 0 20px 0 0;
+    padding: 5px 0px 0px 0px;
+    background-color: #FFFFFF;
+    background-image: none;
+    border-top: 2px solid #ed1e24;
+}
+#content .feed_item{
+		margin: 5px 7px;
+    padding: 0 0 7px 0;
+    border-bottom: 1px dashed #CCCCCC;
+    clear: both;
+    font-family: 'Ubuntu';
+}
+
+#content .feed_item:hover{
+    background-color: #e0e0e0;
+}
+
+#content .feed_item_title{
+	margin: 1px 0 1px 3px;
+    padding: 1px 2px 1px 3px;
+    color: #1C1C1C;
+    font-weight: bold;
+    line-height: 24px;
+}
+#content .feed_item_title a:link{
+    color: #1C1C1C;
+    text-decoration: none;
+}
+#content .feed_item_title a:visited{color: #1C1C1C;;text-decoration:none;}
+#content .feed_item_title a:hover{color: #1C1C1C;;text-decoration:underline;}
+#content .feed_item_title a:active{color: #1C1C1C;;text-decoration:none;}
+#content .feed_item_podcast{display: none}
+/*need to display date and link to article on the same line*/
+#content .feed_item_date, #content .feed_item_link {
+    font-size: .9em;
+    display: inline-block;
+    padding: 0 5px 0 5px;
+    color: #666666;
+    overflow: hidden;
+}
+
+#content .feed_item_date:before{
+    content: '|';
+    opacity: 0;
+}
+#content .feed_item_link{
+    float: left;
+}
+#content .feed_item_link:before{
+    content: "(";
+}
+#content .feed_item_link:after{
+    content: ")";
+}
+#content .feed_item_link a{
+    text-decoration: none;
+    color: #666666;
+}
+#content .feed_item_link a:hover{
+    text-decoration: underline;
+}
+#content a.feed_item_link_anchor{color:#666666; text-decoration:none;}
+#content a:link.feed_item_link_anchor{color:#666666; text-decoration:none;}
+#content a:visited.feed_item_link_anchor{color:#666666; text-decoration:none;}
+#content a:hover.feed_item_link_anchor{color:#666666; text-decoration:underline;}
+#content a:active.feed_item_link_anchor{text-decoration:none;}
+#content .feed_item_description{font-size:0px;}
+#content .feed_item_thumbnail{width:298px; height:200px; float:left; margin:5px; overflow:hidden;border:#000000 2px;}
+#content .feed_item_clear{width:0: height:0; margin:0; padding:0; clear:both;}
+#footer{display:none;height:0px;margin:0px;padding:0px;color:#FFFFFF;background-color:#FFFFFF;background-image:none;}
+.scroll-pane{width: 100%;overflow:auto;}

@@ -1,0 +1,556 @@
+
+/* Autor: Daniel Giraldo
+   Year: 2015
+   Website: www.iamdanielgiraldo.com
+
+   info: this css file stores all the properties for the mobile website. 
+   I built the website with a mobile first approach, so all the base css properties are for the mobile site.
+   In the file responsive.css you will be able to find the rest of the css properties for the other media queries.;
+
+/***********************
+GENERAL
+************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Open Sans', sans-serif;
+}
+li {
+  list-style: none;
+}
+ul{
+  padding-left: 0;
+}
+
+#banner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  bottom: 0px;
+  background:  repeat scroll center center rgba(0, 0, 0, 0);
+  background-size: cover !important;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-color: #05172B;
+  background-attachment: fixed;
+}
+.section{
+   max-width:100%;
+  padding:10px 0;
+  
+}
+.even{
+  background-color:#F4F2EF;
+}
+
+.odd{
+  background-color:white;
+}
+
+.container{
+  max-width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container-content{
+  text-align: center; 
+  overflow: hidden;
+}
+
+a{
+  text-decoration:none;
+  outline: 0;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+img {
+  max-width:100%;
+ 
+}
+
+.portfolio-item img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px solid #254f7e;
+    border-radius: 50%;
+
+}
+  
+
+h3{
+  margin 0 0 .5em 0;
+  font-size: 2em;
+  
+}
+
+
+
+/***********************
+HEADING
+************************/
+header{
+  float:left;
+  position:fixed;
+  padding:5px 0 0 0;
+  width:100%;
+  border-bottom: 5px solid #76BEBA;
+  box-shadow: -2px 2px 10px gray;
+}
+  
+
+#logo {
+  text-align:center;
+  margin:0;
+  float: left;
+}
+
+h1{
+  font-family:'Changa One', sans-serif;
+  margin:15px;
+  font-size:1.75em;
+  font-weight:normal;
+  line-height:0.8em;
+
+  text-shadow: .5px .5px 2px #76BEBA,
+                1px 1px 5px white;
+
+  
+}
+h2{
+  font-size:0.75em;
+  margin:-5px 0 0;
+  font-weight:normal;
+}
+
+
+/***********************
+NAVIGATION
+
+this is the navigation for the mobile site. Here are all the properties for the mobile menu
+************************/
+
+#intro-holder{
+    /*padding-top: 50%;*/
+    text-align: center; 
+    overflow: hidden;
+    padding: auto;
+    font-size: .75em;
+
+  }
+
+#intro-holder a:hover{
+    text-decoration: none;
+  }
+
+#banner p{
+    font-family:'Changa One', sans-serif;
+    color:#252f37;
+    margin:15px auto;
+    font-weight:normal;
+    line-height:0.8em;
+
+    text-shadow: 2px 2px 5px #254f7e,
+                 -5px -5px 10px white,
+                 10px 10px 10px white;
+  }
+
+    #iam{
+      font-size: 2em;
+
+    }
+
+
+    #danielgiraldo{
+      font-size: 4em
+     
+
+    }
+
+    .description{
+      font-size: 2em;
+      border-radius: 2px;
+    }
+
+    #learn-more{
+      position: relative;
+      bottom: 10px;
+      font-size: 3em;
+      width: 1em;
+      height: 1em;
+      background-color: rgba(255,255,255,.8);
+      border-radius: 100%;
+    }
+
+    /***********************
+    Ticker
+    ************************/
+    .fade {
+      font-family:'Changa One', sans-serif;
+      color:#252f37;
+      font-size: 2em;
+      display: inline-block;
+      margin-top:10px;
+      text-shadow: 2px 2px 5px gray,
+                   -5px -5px 10px white,
+                   10px 10px 10px white;
+      /*background-color: rgba(255,255,255,.5);*/
+
+      
+
+    }
+
+    .fade > li{
+      list-style: none inside none;
+      padding: 15px;
+    }
+
+  
+/***********************
+FOOTER
+************************/
+
+footer{
+    font-size:0.75em;
+    text-align:center;
+    clear:both;
+    padding-top:10px;
+    background-color: #05172B;
+    color: white;
+    border-bottom:4px solid #254f7e;
+  }
+footer p{
+    color: white;
+  }
+  
+/***********************
+PAGE: PORTFOLIO
+************************/
+
+
+
+/***********************
+Section: ABOUT
+************************/
+
+
+.profile-photo{
+  display:block;
+  max-width:150px;
+  margin:auto;
+  border-radius: 100%;
+  box-shadow: 1px 5px 15px gray;
+
+
+}
+
+
+/***********************
+PAGE: CONTACT
+************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  
+}
+
+.contact-info a {
+  display:inline;
+  min-height: 20px;
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a{
+  background-image:url('../img/phone.png');
+
+}
+.contact-info li.mail a{
+  background-image:url('../img/mail.png');
+}
+
+.social-icon{
+  margin: auto;
+  text-align: center;
+  padding:0;
+  z-index: 1;
+ 
+}
+
+.social-icon img:hover{
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px gray
+}
+/***********************
+icons
+************************/
+#arrow-down{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  width: 70px;
+  z-index: 1;
+
+}
+
+#arrow-down:hover{
+  height: 100px;
+  width: 100px;
+}
+
+/***********************
+COLOR
+************************/
+
+/* site body*/
+body{
+  background-color:#fff;
+  color: #999;
+}
+
+/* dark blue header and lighter blue border */
+header{
+  background:#4A928D;
+  border-color:#76BEBA;
+}
+
+/* nav background on mobile */
+#nav{
+  background:#4A928D;
+}
+
+/* logo text */
+h1,h2{
+  color:#252f37;
+}
+h3{
+  color:#252f37;
+}
+
+p{
+  color: #747372;
+}
+
+/* links */
+a{
+  color:#254f7e;
+}
+
+
+
+/* nav link */
+#nav a, #nav a:visited {
+  color: white;
+}
+
+/* selected nav link */
+#nav a.selected, #nav a:hover{
+  color:#252f37;
+  text-shadow: .5px .5px 2px #76BEBA,
+                1px 1px 5px white;
+  
+}
+
+#banner{
+  background-color:#254f7e;
+}
+
+/***********************
+  Section: Portfolio lightbox
+  ************************/
+
+.am-expanded.am-back{
+  background: rgb(37, 79, 126) !important;
+  width: 100%;
+  border-radius: 20px;
+  border: 5px solid rgba(90,134,183,.5);
+  margin-bottom: 50px;
+}
+
+.am-expanded.am-back p{
+  padding: 20px 20px;
+  color: #f7f7f7;
+  font-size: .9em;
+  text-align: center;
+}
+
+.am-expanded.am-back img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.am-expanded.am-back a{
+    color: #05172B;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+.am-expanded.am-back #visit-me{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  width: 200px;
+  height: 50px;
+  color: white;
+  border-radius: 10px;
+  border: 2px solid white;
+  text-transform: uppercase;
+  line-height: 45px;
+}
+.am-expanded.am-back #visit-me:hover{
+  background-color: white;
+  color: #05172B;
+  text-decoration: none;
+
+  }
+
+@media screen and (min-width: 480px){
+  
+  
+  /***********************
+  Section: CONTACT
+  ************************/
+  
+  #primary{
+    width:50%;
+    float: left;
+    margin: 10% 5% 10% 5%;
+
+  }
+  
+  #secondary {
+    width:40%;
+    float: right;
+    margin-bottom: 40px;
+  }
+
+
+  .container{
+    margin: 100px auto;
+
+  }
+  .container-double{
+    margin: 15% auto;
+    
+  }
+  .container-content{
+    text-align: left;
+    margin: auto; 
+    max-width: 90%;
+  }
+ 
+  /***********************
+  Section: Banner
+  ************************/
+  #banner{
+    background-color: none;
+    background-image: url(../img/banner.jpg);
+  }
+   
+  /***********************
+  PAGE:PORTFOLIO
+  ************************/
+  
+  #gallery li{
+    width:28.3333%
+  }
+  
+  #gallery li:nth-child(4n){
+    clear:left;
+  }
+  
+  
+  /***********************
+  PAGE:ABOUT
+  ************************/
+  
+  .profile-photo{
+    margin: auto;
+    max-width: 200px;
+  }
+  
+}
+
+@media screen and (min-width: 660px){
+  #menu-icon{
+    display: none;
+    /*position: absolute;*/
+    /*right: -900px;*/
+    padding: 0;
+  }
+
+  nav>button{
+    display: none;
+  }
+
+
+  
+  #logo{
+    float:left;
+    margin-left: 2.5%;
+    text-align:left;
+    width: 45%;
+    
+  }
+  
+  h1{
+    font-size:2.5em;
+  }
+  
+  h2{
+    font-size:0.825em;
+    margin-bottom: 20px;
+    margin-left:15px;
+  }
+  
+  header{
+    /*border-bottom: 10px solid #76BEBA;*/
+    
+  }
+  
+  #intro-holder{
+    padding-top: 15%;
+    font-size: 1.2em;
+  }
+  #intro-holder a:hover{
+    text-decoration: none;
+  }
+
+  .container{
+    margin: 70px auto;
+
+  }
+  .container-content{
+    max-width: 80%;
+  }
+  
+}
+
+@media screen and (min-width: 940px){
+  #intro-holder{
+    font-size: 2em;
+  }
+}
+
+
+
+
+  

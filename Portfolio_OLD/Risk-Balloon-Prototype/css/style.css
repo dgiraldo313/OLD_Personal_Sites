@@ -1,0 +1,229 @@
+
+body{
+    background: rgba(103, 169, 237, 0.73);
+    width: 100%;
+    overflow: hidden;
+}
+
+br{
+  height: 0px;  
+}
+
+/*testing clouds in the background
+*/
+.clouds{			      
+        position:absolute;
+        z-index: -1;
+        left:0;
+        top:200;
+        height:300%;
+        width:100%;
+        opacity: .8;
+        -webkit-animation:clouds 80s linear infinite;
+        -moz-animation:clouds 100s linear infinite;
+        -o-animation:clouds 100s linear infinite;
+        -webkit-transform:translate3d(0,0,0);
+        -moz-transform:translate3d(0,0,0);
+        -o-transform:translate3d(0,0,0)
+}
+
+#cloud-one{
+    background:url("/img/cloud_one.png");
+}
+
+#cloud-two{
+    background:url("/img/cloud_two.png");
+}
+
+#cloud-three{
+    background:url("/img/cloud_three.png");
+}
+
+
+/*containers*/
+
+#main-container{
+    max-width: 980px;
+    height: auto;
+    display: block;
+    margin: 100px auto 100px auto;
+}
+
+#left-container{
+  width:60%;
+  float: left;
+  padding-top: 50px;
+} 
+
+#right-container{
+    width: 40%;
+    float: right;
+}
+
+#data-container{
+    height: 200px;
+    border: 1px black solid;
+    background: white;
+    border-radius: 20px;
+}
+
+#content{
+    width: 90%;
+    height: 180px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.description{
+	font-family: Helvetica;
+	font-size: 24px;
+    display: block;
+    text-align: center;
+    height: 20%;
+    line-height: 30px;
+}
+
+
+.description div{
+    display: inline-block;
+    
+}
+
+/*buttons*/
+#button-container{
+    margin-top: 40px;
+}
+
+.button{
+	font-family: Helvetica;
+	font-size: 10px;
+	text-align: center;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 50px;
+    line-height: 25px;
+    margin: 0px auto;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 5s fade;
+}
+
+#inflate{
+  width: 47%;
+  border: 2px solid rgb(63, 178, 56);
+  background-color: rgb(82, 209, 81); 
+  float: left;
+}
+
+#leave{
+  width: 47%;
+  border: 2px solid rgb(156, 19, 25);
+  background-color: rgb(209, 42, 39);
+  float: right;
+}
+
+#inflate:hover, #leave:hover{
+  color: white;
+  background-color: rgb(63, 178, 56);
+}
+
+#leave:hover{
+    color: white;
+    background-color: rgb(156, 19, 25);
+    border-color: rgb(209, 42, 39);
+}
+
+#inflate:hover{
+    color: white;
+    border-color: rgb(82, 209, 81);
+}
+
+/*balloon*/
+
+/*conatainer for balloon*/
+#balloon{
+    -webkit-animation: float 10s ease-in-out infinite; /* Safari 4+ */
+    -moz-animation:    float 10s ease-in-out infinite; /* Fx 5+ */
+    -o-animation:      float 10s ease-in-out infinite; /* Opera 12+ */
+    animation:         float 10s ease-in-out infinite; 
+    transition: 1.4s ease;
+}
+
+
+#balloon-head{
+    position: relative;
+    margin: auto;
+    left: 0px;
+    width: 100px;
+    height: 130px;
+    background: rgb(255,48,25);
+    background: -moz-linear-gradient(top, rgb(255,48,25) 0%, rgb(207,4,4) 100%);
+    background: -webkit-linear-gradient(top, rgb(255,48,25) 0%,rgb(207,4,4) 100%);
+    background: linear-gradient(to bottom, rgb(255,48,25) 0%,rgb(207,4,4) 100%);
+    border-radius: 50%;
+    box-shadow: inset -10px -10px 20px #d52020;
+    opacity: 0.9;
+}
+
+#balloon-middle{
+   content: "";
+    position: relative;
+    margin: auto;
+    top: -1px;
+    width: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #d52020;
+}
+
+#balloon-tail{
+    content: "";
+    position: relative;
+    margin: auto;
+    top: -1px;
+    width: 2px;
+    height: 200px;
+    background: rgba(33,33,33,0.6);
+}
+
+
+
+
+/*keyframes*/
+
+/*animation for balloon floating*/
+@-webkit-keyframes float{
+  0%,100%{
+    -webkit-transform: translateY(0px) rotate(3deg);
+  }
+  50%{
+    -webkit-transform: translateY(-25px) rotate(-5deg);
+  }
+
+}
+
+/*animation for clouds*/
+@-webkit-keyframes clouds {
+    0% {
+        bottom:0%
+    }
+
+    100% {
+        bottom:-200%
+    }
+}
+@-moz-keyframes clouds {
+    0% {
+        bottom:0
+    }
+
+    100% {
+        border:-200%
+    }
+}
+
+
+
+

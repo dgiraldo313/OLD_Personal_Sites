@@ -1,0 +1,443 @@
+
+/* Autor: Daniel Giraldo
+   Year: 2015
+   Website: www.iamdanielgiraldo.com
+
+   info: this css file stores all the properties for the mobile website. 
+   I built the website with a mobile first approach, so all the base css properties are for the mobile site.
+   In the file responsive.css you will be able to find the rest of the css properties for the other media queries.;
+
+/***********************
+GENERAL
+************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  font-family:'Open Sans', sans-serif;
+}
+
+#banner{
+  max-width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+#about{
+  max-width:100%;
+  padding:10px 0;
+  background-color:#F4F2EF;
+}
+
+#contact{
+  max-width:100%;
+  padding:10px 0;
+  background-color:white;
+}
+
+
+.container{
+  max-width: 80%;
+  margin: 25% auto;
+  overflow: hidden;
+}
+
+
+.container-content{
+  text-align: center; 
+  overflow: hidden;
+}
+
+a{
+  text-decoration:none;
+  outline: 0;
+}
+
+img {
+  max-width:100%;
+ 
+}
+
+  
+
+h3{
+  margin 0 0 .5em 0;
+  font-size: 2em;
+  
+}
+
+
+
+/***********************
+HEADING
+************************/
+header{
+  float:left;
+  position:fixed;
+  padding:5px 0 0 0;
+  width:100%;
+  border-bottom: 5px solid #76BEBA;
+  box-shadow: -2px 2px 10px gray;
+}
+  
+
+#logo {
+  text-align:center;
+  margin:0;
+  float: left;
+}
+
+h1{
+  font-family:'Changa One', sans-serif;
+  margin:15px;
+  font-size:1.75em;
+  font-weight:normal;
+  line-height:0.8em;
+
+  text-shadow: .5px .5px 2px #76BEBA,
+                1px 1px 5px white;
+
+  
+}
+h2{
+  font-size:0.75em;
+  margin:-5px 0 0;
+  font-weight:normal;
+}
+
+
+/***********************
+NAVIGATION
+
+this is the navigation for the mobile site. Here are all the properties for the mobile menu
+************************/
+
+nav{
+  text-align:center;
+  float: right;
+} 
+
+
+
+nav li{
+  display: inline-block;
+  float: left;
+  padding: 10px
+}
+
+nav a{
+  font-weight:800;
+  padding: 15px 10px;
+}
+
+nav ul, nav:active ul { 
+      display: none;
+      position: absolute;
+      padding: 15px 20px;
+      background: #76BEBA;
+      right: 0px;
+      top: 30px;
+      width: 100%;
+
+  }
+ 
+  
+  nav li {
+
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0;
+    border-bottom: 1px solid #4A928D;
+
+
+  }
+
+  nav li:last-child{
+    border-bottom: none;
+  }
+
+  nav:hover ul{
+    display: block;
+  }
+
+ 
+
+nav>button{
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  margin-right: 5px;
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+
+}
+
+
+span{
+  display: block;
+  border-bottom: 2px solid black;
+  width: 25px;
+  padding-top: 5px;
+}
+  
+
+/***********************
+Intro Banner
+************************/
+
+#banner img{
+  margin-top:60px;
+  max-height: 80%;
+  width:100%
+  
+  
+  
+}
+
+#description-holder{
+    text-align: center; 
+    overflow: hidden;
+    padding: auto;
+    font-size: .75em;
+
+  }
+
+
+  #banner p{
+    display: inline-block;
+    color:#000;
+    text-align:center;
+    margin:0;
+    padding:1% 0 2% 0;;
+    
+  }
+
+  
+
+
+    /***********************
+    Ticker
+    ************************/
+    .typing {
+      color: #000;
+      display: inline-block;
+      margin: 0;
+      padding:0;
+      
+
+    }
+
+    .typing > li{
+      list-style: none inside none;
+      padding: 0;
+    }
+
+  
+/***********************
+FOOTER
+************************/
+
+footer{
+    font-size:0.75em;
+    text-align:center;
+    clear:both;
+    padding-top:10px;
+    background-color: #76BEBA;
+    color: white;
+    border-bottom:2px solid #4A928D;
+  }
+  
+.social-icon{
+  width:40px;
+  height:40px;
+  margin:0 5px;
+  padding:0;
+ 
+}
+
+
+/***********************
+PAGE: PORTFOLIO
+************************/
+
+
+
+/***********************
+Section: ABOUT
+************************/
+
+
+.profile-photo{
+  display:block;
+  max-width:150px;
+  margin:auto;
+  border-radius: 100%;
+  box-shadow: 1px 5px 15px gray;
+
+
+}
+
+
+/***********************
+PAGE: CONTACT
+************************/
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  
+}
+
+.contact-info a {
+  display:inline;
+  min-height: 20px;
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+}
+
+.contact-info li.phone a{
+  background-image:url('../img/phone.png');
+
+
+
+
+}
+.contact-info li.mail a{
+  background-image:url('../img/mail.png');
+
+
+}
+
+/***********************
+Section: ad
+************************/
+
+#ad{
+  max-width: 50%;
+  padding: 5%;
+  background-color: #F4F2EF;
+  margin: auto;
+  float:none;
+  border: 2px dashed;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px;
+  
+  
+
+}
+
+#ad a{
+  display:inline;
+  min-height: 0;
+  padding: 0;
+  
+
+}
+
+#ad a img{
+  border-radius: 5%;
+  /*border-color: 2px solid ;*/
+  /*margin-left: 4%;*/
+  }
+
+#ad-description{
+  max-width: 90%;
+  margin-left: 5%;
+  margin-top: 5px;
+  
+
+
+}
+#ad #ad-description p{
+  text-align: justify;
+  font-size: .7em;
+  
+}
+
+/*#ad description p a{
+  display:inline;
+  min-height: 0;
+  padding: 0;
+  margin: 0;
+}*/
+
+
+
+
+
+
+
+
+/***********************
+COLOR
+************************/
+
+/* site body*/
+body{
+  background-color:#fff;
+  color: #999;
+}
+
+/* dark blue header and lighter blue border */
+header{
+  background:#4A928D;
+  border-color:#76BEBA;
+}
+
+/* nav background on mobile */
+nav{
+  background:#4A928D;
+}
+
+/* logo text */
+h1,h2{
+  color:#252f37;
+}
+h3{
+  color:#252f37;
+}
+
+p{
+  color: #747372;
+}
+
+/* links */
+a{
+  color:#97bf85;
+}
+
+/* nav link */
+nav a, nav a:visited {
+  color: white;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover{
+  color:#252f37;
+  text-shadow: .5px .5px 2px #76BEBA,
+                1px 1px 5px white;
+  
+}
+
+#banner{
+  background-color:white;
+}
+
+
+
+
+
+
+  

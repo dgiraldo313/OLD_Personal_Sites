@@ -1,0 +1,12 @@
+[
+    {   
+        "inflation_rate":"1.5",
+        "inflation_max":"300",
+        "color":"red",
+        "cash_multiplier":"15",
+        "userId":"1",
+        "sessionId":"1",
+        "adminId":"2"
+    
+    }
+]
